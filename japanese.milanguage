@@ -678,6 +678,7 @@
         "ravager": "ラヴェジャー",
         "pillager": "ピリジャー",
         "wandering_trader": "行商人",
+        "bee": "Bee",
         "part/": {
             "body": "胴体",
             "right_arm": "右腕",
@@ -853,6 +854,12 @@
             "back_body": "後身頃",
 			"bell": "鐘",
             "camera": "カメラ"
+            "right_antenna": "Right antenna",
+            "left_antenna": "Left antenna",
+            "right_middle_leg": "Right middle leg",
+            "left_middle_leg": "Left middle leg",
+            "stinger": "Stinger",
+            "lock": "Lock"
         },
         "state/": {
             "variant": "種類",
@@ -877,6 +884,7 @@
             "biome": "バイオーム",
             "profession_level": "交易レベル",
             "collar": "襟",
+            "crack_amount": "Crack amount",
             "value/": {
                 "steve": "スティーブ",
                 "alex": "アレックス",
@@ -1009,6 +1017,10 @@
                 "persian": "ペルシャ",
                 "ragdoll": "ラグドール",
                 "tabby": "タビー"
+                "low": "Low",
+                "high": "High",
+                "normal_nectar": "Normal (With nectar)",
+                "angry_nectar": "Angry (With nectar)"
             }
         }
     },
@@ -1261,6 +1273,10 @@
         "campfire": "焚き火",
         "sweet_berry_bush": "スイートベリーの低木",
         "jigsaw_block": "ジグソーブロック",
+        "bee_nest": "Bee Nest",
+        "beehive": "Beehive",
+        "honey_block": "Honey Block",
+        "honeycomb_block": "Honeycomb Block",
         "state/": {
             "variant": "種類",
             "snowy": "雪",
@@ -1317,6 +1333,7 @@
             "attachment": "アタッチメント",
             "hanging": "Hanging",
             "wood": "Wood",
+            "honey_level": "Honey level",
             "value/": {
                 "true": "オン",
                 "false": "オフ",
@@ -2021,7 +2038,9 @@
             "boxmapped": "テクスチャマッピング",
             "boxmappedtip": "スカイボックスの面にテクスチャ画像と異なる部分があるかどうかを設定します。",
             "savemap": "マップをエクスポート",
-            "savemaptip": "スカイボックステクスチャに使用するテンプレートを保存します。"
+            "savemaptip": "スカイボックステクスチャに使用するテンプレートを保存します。",
+			"rotation": "Rotation",
+			"rotationtip": "The rotation of the skybox/skysphere."
         },
         "sky/": {
             "suntex": "太陽のテクスチャ",
@@ -2613,6 +2632,10 @@
         "camera/": {
             "fov": "視野",
             "fovtip": "カメラのレンズの幅を調整します",
+            "bladeamount": "Blades",
+            "bladeamounttip": "The amount of blades the camera has. Changes the appearance of bloom and DOF.",
+			"bladeangle": "Blade angle",
+            "bladeangletip": "The rotation angle of blades.",
             "rotate": "ある点を中心に回転",
             "rotatetip": "ある点からカメラを一定の距離と角度で回転させます",
             "rotatepoint": "回転ポイント",
@@ -2739,6 +2762,24 @@
             "vignettestrengthtip": "ビネット効果の強さを調整します。",
 			"vignettecolor": "ビネットカラー",
             "vignettecolortip": "ビネット効果の色を調整します。",
+            "ca": "Chromatic aberration",
+            "catip": "Enable a chromatic aberration effect.",
+            "cabluramount": "Blur amount",
+            "cabluramounttip": "The blur amount for the RGB channels.",
+            "cadistortchannels": "Distort RGB channels",
+            "cadistortchannelstip": "Distort RGB channels by offset amount instead of scaling.",
+            "caredoffset": "Red offset",
+            "caredoffsettip": "The offset amount for the red channel.",
+            "cagreenoffset": "Green offset",
+            "cagreenoffsettip": "The offset amount for the green channel.",
+            "cablueoffset": "Blue offset",
+            "cablueoffsettip": "The offset amount for the blue channel.",
+            "distort": "Distort",
+            "distorttip": "Enable a distortion effect.",
+            "distortrepeat": "Repeat image",
+            "distortrepeattip": "Repeat the image when the distortion effect makes the image smaller.",
+            "distortamount": "Distort amount",
+            "distortamounttip": "The amount of distortion to warp the image with.",
             "videosize": "カメラの大きさ",
             "videosizetip": "カメラビューのサイズを調整します。このキーフレームのプロジェクト設定またはカスタム値のいずれかに設定できます。動画として書き出す場合のサイズには影響しませんが、PNG画像/シーケンスとして保存したり、カメラをテクスチャとして使用することができます。",
             "videosizeuseproject": "プロジェクト設定に使用する。",
@@ -2784,6 +2825,18 @@
             "texttip": "このオブジェクトに表示するテキストです。（空でない場合、タイムラインの設定が上書きされます）",
             "font": "フォント",
             "fonttip": "Minecraftのフォントまたはカスタムフォント（.ttfのみ）に変更します"
+            "alignment": "Alignment",
+            "halign": "Horizontal",
+            "haligntip": "The horizontal alignment of text.",
+            "valign": "Vertical",
+            "valigntip": "The vertical alignment of text.",
+            "left": "Left",
+            "center": "Center",
+            "right": "Right",
+            "top": "Top",
+            "bottom": "Bottom",
+            "aa": "AA",
+            "aatip": "Enable AA (Anti Aliasing) to get rid of sharp edges on fonts. (Not reccomended for 3D text.)"
 		},
         "item": "アイテム",
         "item/": {
@@ -3052,6 +3105,8 @@
         "blockbrightnesstip": "地形(.schematicファイル)にある溶岩、火、トーチ、グローストーン、レッドストーンランプなどの特定のブロックの輝度を調整します。",
         "blockglow": "輝くブロックとモデル",
         "blockglowtip": "明るさに応じてブロックおよびモデルシェイプにグロー効果を有効にします。",
+        "blockglowthreshold": "グローカラーのしきい値",
+        "blockglowthresholdtip": "ブロックのテクスチャ上でピクセルがどれだけ明るくなければならないかを決める値です。",
         "lightbleeding": "葉に光を当てる",
         "lightbleedingtip": "葉などの各種植物に明かりを当てます。",
         "render": "レンダー",
