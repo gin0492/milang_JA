@@ -40,7 +40,7 @@
 
 ◆導入方法
 
-	1.ダウンロードしたフォントとバッチファイルを[C:\Users\(ユーザー名)\Mine-imator\Data\Languages]の中に入れます。
+	1.フォントとパッチファイルを[C:\Users\(ユーザー名)\Mine-imator\Data\Languages]の中に入れます。
 
 	2.Mine-imatorでの操作となります。最初の段階は設定が開けないので、適当に新規作成をします。
 	
