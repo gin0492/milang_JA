@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="google-site-verification" content="HZbFUgLXmH6TG-bLcE6WdAS2QGjvVHKiKD9VQcohAUE" />
 
-<title>【1.2.6対応】Mine-imator日本語訳ファイル【.milanguageファイル】</title>
+<title>Mine-imator日本語訳ファイル【.milanguageファイル】</title>
 <meta name="description" content="Mine-imator用日本語訳ファイル（milanguageファイル）の配布サイトです。" />
 
 <meta property="og:url" content="https://gin0492.github.io/milang_JA/" />
@@ -41,11 +41,15 @@ font-family: 'Noto Sans JP'
 
 <p>Mine-imator用日本語訳ファイル（milanguageファイル）の配布サイト</p>
 
+<div class="new-info">
+<p class="px">7/7追記: 1.2.7の対応までもうしばらくお待ち下さい。</p>
+</div>
+
 <h2>提供する日本語訳ファイルについて</h2>
 
 <p>有志により作成された非公式の日本語訳ファイルです。このファイルの製作者は当該のソフトウェアの製作関係者とは無関係です。</p>
 
-<p>ブロック名、MOB名、バイオーム名などは公式訳を使用してます。熱帯魚の種類などの公式訳がまだ分からない部分は外来語に訳してます。</p>
+<p>ブロック名などは公式訳を使用してます。熱帯魚の種類などの公式訳がまだ分からない部分は外来語に訳してます。</p>
 
 <img src="img/image1.png">
 
@@ -53,13 +57,13 @@ font-family: 'Noto Sans JP'
 
 <p>はみ出し防止のため、一部のカタカナは半角ｶﾀｶﾅに変換してます。</p>
 
-<p>本パッチファイルを導入する際は<b>TTF形式の日本語フォントが必要になります</b>。 ひらがな、カタカナ、漢字が使えるフォントであれば何でも構いませんので各自でお調べください。</p>
+<p>本ファイルを導入する際は<b>TTF形式の日本語フォントが必要になります</b>。 ひらがな、カタカナ、漢字が使えるフォントであれば何でも構いませんので各自でお調べください。</p>
 
 <p>Mine-imatorのバージョンが変わった際にはこちらのサイトを確認して適宜、新しい日本語ファイルと入れ替える必要があります。</p>
 
-<p>改変の有無に関わらず、本パッチファイルの再配布することはできません。自作発言もご遠慮ください。</p>
+<p>改変の有無に関わらず、本ファイルを再配布することはできません。自作発言もご遠慮ください。</p>
 
-<p>本パッチファイルを使用するにあたり生じたいかなるトラブル、損失等について製作者は一切責任を負いません。</p>
+<p>本ファイルを使用するにあたり生じたいかなるトラブル、損失等について製作者は一切責任を負いません。</p>
 
 <h2>ダウンロード</h2>
 
@@ -71,7 +75,7 @@ japanese.milanguage
 </a>
 
 <div class="infotxt">
-<p>ver<b>1.2.6</b>の最新バージョンに対応しています。それ以外のバージョンは使えません。</p>
+<p>ver<b>1.2.6</b>のバージョンに対応しています。それ以外のバージョンは使えません。</p>
 </div>
 
 <h2>日本語にする方法</h2>
@@ -80,13 +84,9 @@ japanese.milanguage
 <p>2.Mine-imatorの設定で <b>Interface</b> をクリックして <b>Font: Default</b> の下のフォルダマークをクリックして日本語のフォントに切り替えます。</p>
 <p>3.さらに下のファイルマークをクリックして <b>japanese.milanguage</b> に切り替えます。</p>
 
-<h2>更新ログ</h2>
-
-<p>2020/06/19　◯一部のブロック名が間違っていたので修正しました。</p>
-  
 <h2>連絡先</h2>
 
-<p>〇〇の訳が間違ってるとかがあればお知らせ下さい。</p>
+<p>〇〇の訳が間違ってるとかがあればお知らせ下さい。基本的に連絡いただいた内容について回答はいたしません。</p>
 
 <p>kaulef@yahoo.co.jp</p>
 <p>TwitterID: @kaucly</p>
@@ -135,11 +135,23 @@ h2 {
 .infotxt{
   margin: 1em 0;
   padding: 1em;
+  background-color: #e3fdfd;
+  border: dashed 3px #71c9ce;
+}
+
+.infotxt p{
+  margin: 0;
+  padding: 0;
+}
+
+.new-info{
+  margin: 1em 0;
+  padding: 1em;
   background-color: #fff9c4;
   border: dashed 3px #ffca28;
 }
 
-.infotxt p{
+.new-info p{
   margin: 0;
   padding: 0;
 }
