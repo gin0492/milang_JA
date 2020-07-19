@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel=”stylesheet” href=”sample.css” type=”text/css”>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <meta name="google-site-verification" content="HZbFUgLXmH6TG-bLcE6WdAS2QGjvVHKiKD9VQcohAUE" />
@@ -25,12 +26,12 @@
 <link rel="icon" href="画像URL" sizes="48x48" type="image/png" /> 
 <link rel="icon" href="画像URL" sizes="62x62" type="image/png" />
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
 <style>
 body {
-font-family: 'Noto Sans JP'  
+font-family: 'Noto Sans JP', sans-serif;
 }
 </style>
 </head>
@@ -38,65 +39,86 @@ font-family: 'Noto Sans JP'
 <body>
 <main>
 <h1><b>Mine-imator日本語訳ファイル</b></h1>
-
-<p>Mine-imator用日本語訳ファイル（milanguage形式ファイル）の配布サイトです。</p>
+<p>Mine-imator用日本語訳ファイル（milanguage形式）の配布サイトです。</p>
 
 <div class="infotxt">
-<p class="px"><b>【7/8更新】Mine-imatorの最新バージョン（1.2.7）に対応した日本語ファイルを公開しました。以前のファイルを導入した方は、お手数ですが再導入をお願いします。</b></p>
+<p class="px">【7/8更新】Mine-imatorの最新バージョン（1.2.7）に対応した日本語ファイルを公開しました。</p>
 </div>
 
-<h2>提供する日本語訳ファイルについて</h2>
-
-<p>有志により作成された非公式の日本語訳ファイルです。本サイトまたは日本語ファイルの製作者は、当該のソフトウェアの製作関係者とは無関係です。</p>
-
-<p>ブロック名などはJava版の公式訳を使用してます。はみ出し防止のため、一部のカタカナは半角ｶﾀｶﾅに変換してます。</p>
-
-<img src="img/image1.png">
-
-<p>日本語検索することが可能なので、作業効率上がるかも。</p>
-
-<p>Mine-imatorを日本語にさせるには<b>TTF形式の日本語フォントが必要になります</b>。 ひらがな、カタカナ、英数、漢字が揃っているフォントであれば何でも構いませんので各自でお調べください。</p>
-
-<p>Mine-imatorのバージョンが変わった際にはこちらのサイトを確認して適宜、新しい日本語ファイルと入れ替える必要があります。</p>
-
-<p>改変の有無に関わらず、日本語ファイルを再配布することはできません。自作発言もご遠慮ください。</p>
-
-<p>日本語ファイルを使用するにあたり生じたいかなるトラブル、損失等について製作者は一切責任を負いません。</p>
-
 <h2>ダウンロード</h2>
-
-<p>下のボタンを押して、ファイルをダウンロードしてください。</p>
+<p>下のボタンを押して、ファイルをダウンロードしてください。初めて導入される方は、<a href="#HowTo">日本語にする方法</a>をご覧ください。</p>
 
 <a href="https://gin0492.github.io/milang_JA/japanese.milanguage" class="btn-square">
-<span class="material-icons">
-get_app
-</span>
-japanese.milanguage
+<i class="material-icons-round">get_app</i><b>japanese.milanguage</b>
 </a>
 
-<h2>日本語にする方法</h2>
 
-<p>1.フォントと日本語訳ファイルを<b> C: \ Users \ ユーザー名 \ Mine-imator \ Data \ Languages </b>の中に入れます。</p>
-<p>2.Mine-imatorの設定で <b>Interface</b> をクリックして <b>Font: Default</b> の下のフォルダマークをクリックして日本語のフォントに切り替えます。</p>
-<p>3.さらに下のファイルマークをクリックして <b>japanese.milanguage</b> に切り替えます。</p>
+
+<h2>提供するファイルについて</h2>
+<p>有志により作成された非公式の日本語訳ファイルです。本サイトまたは日本語ファイルの製作者は、当該のソフトウェアの製作関係者とは無関係です。</p>
+<p>ブロック名などはJava版の公式訳を使用してます。はみ出し防止のため、一部のカタカナは半角ｶﾀｶﾅに変換してます。</p>
+<img src="img/img1.png">
+<p>日本語検索することが可能なので、作業効率上がるかも。</p>
+<p>Mine-imatorのバージョンが変わった際にはこちらのサイトを確認して適宜、新しい日本語ファイルと入れ替える必要があります。</p>
+<p>改変の有無に関わらず、日本語ファイルを再配布することはできません。自作発言もご遠慮ください。</p>
+<p>日本語ファイルを使用するにあたり生じたいかなるトラブル、損失等について製作者は一切責任を負いません。</p>
+
+<h2 id="HowTo">日本語にする方法</h2>
+
+<p>1.<b>TTF形式の日本語フォントを用意します。</b>最適なフリーのフォントサイトをいくつか紹介しますので、見やすい方を選んでダウンロードしてください。インストールは不要です。</p>
+<p class="px"><a href="http://itouhiro.hatenablog.com/entry/20140917/font" target="_blank">itouhiro - Nasuフォント</a></p>
+<p>見た目が似ている文字を判別しやすい。<b>NasuM</b>の<b>Regular</b>がおすすめ。<p>
+
+<p class="px"><a href="http://mix-mplus-ipa.osdn.jp/migu/" target="_blank">M+とIPAの合成フォント - Miguフォント</a></p>
+<p>こちらも見た目が似ている文字を判別しやすい。<b>Migu 1M</b>の<b>Regular</b>がおすすめ。<p>
+
+<p class="px"><a href="https://www.flopdesign.com/freefont.html" target="_blank">FLOP DESIGN - 日本語フリーフォント</a></p>
+<p>スマートフォントUI、フロップデザインフォントがおすすめ。<p>
+
+<p>2.フォントと日本語ファイルを<b>C:\Users\[ユーザー名]\Mine-imator\Data\Languages</b>の中に入れます。</p>
+<p>3.Mine-imatorの<i class="material-icons-round">settings</i>設定で <b>Interface</b> をクリックして <b>Font: Default</b> の下の<i class="material-icons-round">folder</i>をクリックして日本語フォントに切り替えます。</p>
+<p>4.さらに下の<i class="material-icons-round">folder</i>をクリックして <b>japanese.milanguage</b> に切り替えます。</p>
 
 <h2>主な更新履歴</h2>
 
 <p>2020/07/08　Mine-imator 1.2.7に対応</p>
 <p>2020/06/02　日本語ファイル公開</p>
-
 <p>※記載のない更新は微修正です</p>
 
 <h2>連絡先</h2>
 
 <p>〇〇の訳が間違ってるとかがあればお知らせ下さい。基本的に連絡いただいた内容について回答はいたしません。</p>
 
-<p>kaulef@yahoo.co.jp</p>
+<p>kaulef★yahoo.co.jp</p>
+<p>★を＠に変えてください。</p>
 <p>TwitterID: @kaucly</p>
 
 <style>
+.material-icons-round {
+  height: 22px;
+  vertical-align: bottom;
+ 
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+ 
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* IEサポート */
+  font-feature-settings: 'liga';
+
+}
+
+.material-icons-round.md-18 { font-size: 18px; }
+.material-icons-round.md-24 { font-size: 24px; }
+.material-icons-round.md-36 { font-size: 36px; }
+.material-icons-round.md-48 { font-size: 48px; }
+
 .px {
   font-size: 20px;
+  font-weight: bold;
 }
 .btn-square {
   display: inline-block;
@@ -105,7 +127,7 @@ japanese.milanguage
   background: #668ad8;/*ボタン色*/
   color: #FFF;
   border-bottom: solid 4px #627295;
-  border-radius: 3px;
+  border-radius: 20px;
 }
 .btn-square:active {
   /*ボタンを押したとき*/
@@ -113,12 +135,6 @@ japanese.milanguage
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
-
-.material-icons {
-  height: 24px;
-  vertical-align: bottom;
-}
-
 h1 {
   position: relative;
   padding: 0.25em 0;
@@ -133,6 +149,7 @@ h1:after {
 
 h2 {
   background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  font-weight: bolder;
 }
 
 .infotxt{
