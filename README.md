@@ -1,1 +1,1 @@
-https://gin0492.github.io/milang_JA/
+https://gin0492.github.io/milanguage-ja
