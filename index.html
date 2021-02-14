@@ -35,20 +35,15 @@
   <link rel="icon" href="画像URL" sizes="48x48" type="image/png" /> 
   <link rel="icon" href="画像URL" sizes="62x62" type="image/png" />
   
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 <style>
 
 body {
-    font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-    font-size: 17px;
-    color: #333;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #181A1B;
-    color: #f5f5f5;
-  }
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Noto Sans JP', sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
 }
 
 .contents {
@@ -92,24 +87,35 @@ h2:after {
     width: 100%;
     border-bottom: solid 3px rgb(119, 195, 223);
 }
-
+h3:first-letter {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7172ac;
+}
 </style>
 </head>
 <body>
 <div id="main">
    <div class="contents">
    <div class="header"><h1>Mine-imatorを日本語化にする</h1></div>
-    <h2>導入方法</h2>
-     <p>1.下にあるボタンを押してファイルデータをダウンロードします。</p>
+   <p align="center"><a href="https://gin0492.github.io/mblanguage-ja/" target="_blank">ModelBench用の日本語ファイルもご用意しました。</a></p>
+    <h2>スクリーンショット</h2>
+    <div align="center"><img src="img/scrn1.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
+    <div align="center"><img src="img/scrn2.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
+    <h2>日本語化の手順</h2>
+     <h3>1.Mine-imatorファイルのバックアップを作成しておく</h3>
+     <p>日本語化による不具合等が発生した場合に備えて、Mine-imatorファイルのバックアップを作成しておくことをオススメします。</p>
+     <p>デフォルトのインストール先は <b>C:\Users\[ユーザー名]\Mine-imator</b> です。</p>
+     <p>デスクトップ上にあるMine-imatorを右クリック、[ファイルの場所を開く]で移動することも可能。</p>
+     <h3>2.日本語フォントを用意してください。</h3>
+     <p>Mine-imatorで使われているフォントは日本語に対応してないので、日本語対応のフォントファイルに置き換える必要があります。</p>
+     <p>私自身はフォントに詳しくないので、どれをオススメするかは分かりかねます。各自でお調べになって見やすいフォントを選んでダウンロードしてください。</p>
+     <h3>3.下にあるボタンを押してファイルデータをダウンロードします。</h3>
      <a href="https://gin0492.github.io/milanguage-ja/japanese.milanguage" class="bt-samp34"><i class="material-icons-round b">save_alt</i> ダウンロード</a>
-     <p><b>日本語フォントも用意してください。</b>Mine-imatorで使われているフォントは日本語に対応してないので、日本語対応のフォントファイルに置き換える必要があります。</p>
-     <p>2.Mine-imatorのインストールフォルダを開きます。<br>
-     デフォルトのインストール先は<b>C:\Users\[ユーザー名]\Mine-imator</b>になります。<br>
-     デスクトップにあるMine-imatorを右クリック、[ファイルの場所を開く]で移動することも可能。</p>
-     <p>3.フォントと日本語ファイルを<b>Data\Languages</b>の中に入れます。</p>
-        <img src="img/img1.gif" width="80%" height="80%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
-     <p>4.Mine-imatorの<i class="material-icons-round">settings</i>設定で<b>Interface</b>を開き、<b>Font: Default</b>の下の<i class="material-icons-round">folder</i>をクリックして日本語フォントに切り替えます。</p>
-     <p>5.さらに下の<i class="material-icons-round">folder</i>をクリックして<b>japanese.milanguage</b>に切り替えます。</p>
+     <h3>4.フォントと日本語ファイルを<b>Data\Languages</b>の中に入れます。</h3>
+        <img src="img/img1.png" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+     <h3>5.Mine-imatorの<i class="material-icons-round">settings</i>設定で<b>Interface</b>を開き、<b>Font: Default</b>の下の<i class="material-icons-round">folder</i>をクリックして日本語フォントに切り替えます。</h3>
+     <h3>6.さらに下の<i class="material-icons-round">folder</i>をクリックして<b>japanese.milanguage</b>に切り替えたら日本語化の完了です。</h3>
         <img src="img/img2.gif" width="60%" height="60%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
    <h2>注意事項</h2>
      <p>●当サイトで配布するファイルデータにつきましては、個人で行った翻訳となります。正式なデベロッパーとは関係ありません。</p>
@@ -118,7 +124,7 @@ h2:after {
      <p>●当サイトに掲載された内容を用いて行った行為による損害等の一切の責任を負いかねますのでご了承ください。</p>
      <p>●今後新しいアップデートに対応するかどうかは気分となります。一人でほとんどの作業をしていますので、今後のアップデートについては未定となります。</p>
         <div align="right">連絡は <a href="https://docs.google.com/forms/d/e/1FAIpQLSen31nMmsHogk9cyQxX8ejiOuWFG3cFmygOParbzRW2_yGuqg/viewform" target="_blank">フォーム</a> か <a href="https://twitter.com/kuadr0" target="_blank">Twitter</a> へどうぞ。</div>
-     <div align="center">© 2020 kuadr0</div>
+     <div align="center">© 2021 kuadr0</div>
    </div>
 </div>
 <style>
@@ -132,7 +138,7 @@ user-select:none;
 -khtml-user-drag:none;
 }
 .material-icons-round {
-    height: 25px;
+    height: 27px;
     vertical-align: bottom;
     font-size: 25px;
    
@@ -151,7 +157,7 @@ user-select:none;
 .material-icons-round.b {
     height: 35px;
     vertical-align: bottom;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 a.bt-samp34{
