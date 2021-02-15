@@ -1,13 +1,13 @@
 {
-    "description": "Copyright © 2021 kuadr0 All Rights Reserved.",
+    "description": "Copyright (C) 2021 kuadr0 All Rights Reserved.",
     "file/": {
         "language": "日本語",
         "translator": "kuadr0",
         "forversion": "1.2.7",
-        "lastchange": "2021/02/14"
+        "lastchange": "2021/02/16"
     },
     "startup/": {
-        "caption": "スタート",
+        "caption": "Mine-imator Japanese Version. Translated by kuadr0.｀･ω･´)ﾉ",
         "trial": "試用版",
         "full": "完全版",
         "version": "%1 バージョン %2, リリース日 %3",
@@ -176,11 +176,11 @@
     },
     "loadassets/": {
         "unzip": "リソースパック %1 を展開中…",
-        "textures": "テクスチャの読み込み中…",
-        "biomes": "バイオームの読み込み中…",
-		"misc": "その他、アセットの読み込み中…",
-        "models": "キャラクターの読み込み中…",
-        "blocks": "ブロックの読み込み中…",
+        "textures": "テクスチャを読み込み中…",
+        "biomes": "バイオームを読み込み中…",
+		"misc": "その他、アセットを読み込み中…",
+        "models": "キャラクターを読み込み中…",
+        "blocks": "ブロックを読み込み中…",
 		"loadingblock": "ブロックを読み込んでいます"
     },
     "newproject/": {
@@ -454,7 +454,7 @@
 	},
     "modelbench/": {
         "caption": "モデルベンチ",
-        "info": "Modelbenchというツールを使って、アニメーション用の独自のモデルを作成しましょう！",
+        "info": "ModelBenchというツールを使って、アニメーション用の独自のモデルを作成しましょう！",
         "download": "ダウンロード",
         "downloadtip": "モデルベンチをダウンロードします。",
         "notnow": "あとで",
@@ -2719,7 +2719,7 @@
         "camera": "カメラ",
         "cameratip": "カメラのプロパティを変更します。",
         "camera/": {
-            "fov": "視野",
+            "fov": "画角",
             "fovtip": "カメラのレンズの幅を調整します。",
             "bladeamount": "ﾌﾞﾚｰﾄﾞ",
             "bladeamounttip": "カメラが持っているブレードの量。ブルームとDOFの外観を変更します。",
@@ -2913,7 +2913,7 @@
             "text": "テキスト",
             "texttip": "このオブジェクトに表示するテキストです。（空でない場合、タイムラインの設定が上書きされます）",
             "font": "フォント",
-            "fonttip": "使用するフォントを、通常の Minecraft または TrueType フォントファイル (.ttf) から変更します。",
+            "fonttip": "使用するフォントを、通常の Minecraft または TrueType フォントファイル (.ttf) に変更します。",
             "alignment": "アライメント",
             "halign": "水平",
             "haligntip": "テキストの水平方向の配置。",
@@ -2925,7 +2925,7 @@
             "top": "上",
             "bottom": "下",
             "aa": "アンチエイリアス",
-            "aatip": "アンチエイリアスを有効にして、フォントの鋭利なエッジを取り除きます。(3Dテキストにはお勧めしません)"
+            "aatip": "アンチエイリアスを有効にして、フォントの鋭利なエッジを取り除きます。(3Dテキストには推奨されません)"
 		},
         "item": "アイテム",
         "item/": {
