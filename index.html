@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68988878-4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -11,7 +9,6 @@
     gtag('config', 'UA-68988878-4');
   </script>
   <meta charset="UTF-8">
-  <link rel=”stylesheet” href=”sample.css” type=”text/css”>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="HZbFUgLXmH6TG-bLcE6WdAS2QGjvVHKiKD9VQcohAUE" />
@@ -36,157 +33,54 @@
   <link rel="icon" href="画像URL" sizes="62x62" type="image/png" />
   
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
-<style>
-
-body {
-    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Noto Sans JP', sans-serif;
-    background-color: #f5f5f5;
-    color: #1a1a1a;
-}
-
-.contents {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.header {
-    text-align: center;
-}
-
-h1 {
-    font-weight: bold;
-    position: relative;
-    font-size: 40px;
-}
-
-h2 {
-    font-weight: bold;
-    position: relative;
-    padding-left: 25px;
-    font-size: 30px;
-}
-
-h2:before {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 0;
-    border: none;
-    border-left: solid 15px transparent;
-    border-bottom: solid 15px rgb(119, 195, 223);
-}
-h2:after {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: 10px;
-    width: 100%;
-    border-bottom: solid 3px rgb(119, 195, 223);
-}
-h3:first-letter {
-  font-weight: bold;
-  font-size: 1.5em;
-  color: #7172ac;
-}
-</style>
 </head>
 <body>
-<div id="main">
-   <div class="contents">
-   <div class="header"><h1>Mine-imatorを日本語化にする</h1></div>
-   <p align="center"><a href="https://gin0492.github.io/mblanguage-ja/" target="_blank">ModelBench用の日本語ファイルもご用意しました。</a></p>
-    <h2>スクリーンショット</h2>
-    <div align="center"><img src="img/scrn1.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
-    <div align="center"><img src="img/scrn2.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
-    <h2>日本語化の手順</h2>
-     <h3>1.Mine-imatorファイルのバックアップを作成しておく</h3>
-     <p>日本語化による不具合等が発生した場合に備えて、Mine-imatorファイルのバックアップを作成しておくことをオススメします。</p>
-     <p>デフォルトのインストール先は <b>C:\Users\[ユーザー名]\Mine-imator</b> です。</p>
-     <p>デスクトップ上にあるMine-imatorを右クリック、[ファイルの場所を開く]で移動することも可能。</p>
-     <h3>2.日本語フォントを用意してください。</h3>
-     <p>Mine-imatorで使われているフォントは日本語に対応してないので、日本語対応のフォントファイルに置き換える必要があります。</p>
-     <p>私自身はフォントに詳しくないので、どれをオススメするかは分かりかねます。各自でお調べになって見やすいフォントを選んでダウンロードしてください。</p>
-     <h3>3.下にあるボタンを押してファイルデータをダウンロードします。</h3>
-     <a href="https://gin0492.github.io/milanguage-ja/japanese.milanguage" class="bt-samp34"><i class="material-icons-round b">save_alt</i> ダウンロード</a>
-     <h3>4.フォントと日本語ファイルを<b>Data\Languages</b>の中に入れます。</h3>
-        <img src="img/img1.png" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
-     <h3>5.Mine-imatorの<i class="material-icons-round">settings</i>設定で<b>Interface</b>を開き、<b>Font: Default</b>の下の<i class="material-icons-round">folder</i>をクリックして日本語フォントに切り替えます。</h3>
-     <h3>6.さらに下の<i class="material-icons-round">folder</i>をクリックして<b>japanese.milanguage</b>に切り替えたら日本語化の完了です。</h3>
-        <img src="img/img2.gif" width="60%" height="60%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
-   <h2>注意事項</h2>
-     <p>●当サイトで配布するファイルデータにつきましては、個人で行った翻訳となります。正式なデベロッパーとは関係ありません。</p>
-     <p>●ブロック名などはJava版に合わせて翻訳してます。はみ出し防止のため、一部のカタカナは半角ｶﾀｶﾅに変換してます。</p>
-     <p>●日本語ファイルデータの使用は個人利用に限ります。二次配布等は禁止です。</p>
-     <p>●当サイトに掲載された内容を用いて行った行為による損害等の一切の責任を負いかねますのでご了承ください。</p>
-     <p>●今後新しいアップデートに対応するかどうかは気分となります。一人でほとんどの作業をしていますので、今後のアップデートについては未定となります。</p>
-        <div align="right">連絡は <a href="https://docs.google.com/forms/d/e/1FAIpQLSen31nMmsHogk9cyQxX8ejiOuWFG3cFmygOParbzRW2_yGuqg/viewform" target="_blank">フォーム</a> か <a href="https://twitter.com/kuadr0" target="_blank">Twitter</a> へどうぞ。</div>
-     <div align="center">© 2021 kuadr0</div>
+  <div class="contents">
+    <div class="header"><h1>Mine-imatorを日本語化にする</h1></div>
+    <div class="mbinfo" align="right"><a href="https://gin0492.github.io/mblanguage-ja/" target="_blank">ModelBench用の日本語ファイルもご用意しました。</a></div>
+     <h2>スクリーンショット</h2>
+     <div align="center"><img src="img/scrn1.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
+     <div align="center"><img src="img/scrn2.jpg" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" /></div>
+     <h2>日本語化の手順</h2>
+       <h3>1.日本語フォントを用意してください</h3>
+         <p>Mine-imatorで使われているフォントは日本語に対応してないので、日本語対応のフォントファイルに置き換える必要があります。</p>
+       <h3>2.日本語フォントを適切な場所に置く</h3>
+         <p>設定した日本語フォントが移動したり消えてしまわないように、予め適切な場所に置いてください。<br>(例)Cドライブ直下に「fonts」というフォルダを作り、ここにフォントファイルを設置。</p>
+       <h3>3.下にあるボタンを押してファイルデータをダウンロードします</h3>
+       <a href="#modal-01" class="bt-samp34"><i class="material-icons-round b">save_alt</i> Mine-imator_Japanese.zip</a>
+       <div class="modal-wrapper" id="modal-01">
+         <a href="#!" class="modal-overlay"></a>
+         <div class="modal-window">
+           <div class="modal-content">
+             <h4>日本語フォントの用意はできていますか？</h4>
+             <p><b>Mine-imatorを日本語化にさせるには、<span class="red">日本語フォントのダウンロードと設定が必須</span>です。</b></p>
+             <a href="https://www.mediafire.com/file/r5cn6r5vvmnkulr" class="btn-yes" target="_blank">はい</a> <a href="https://search.yahoo.co.jp/search?p=%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88" class="btn-no" target="_blank">いいえ</a>
+           </div>
+           <a href="#!" class="modal-close">×</a>
+         </div>
+         </div>
+         <p>zip形式の圧縮ファイルですので、ダウンロード後解凍してください。</p>
+      <h3>4.<b>Data</b>フォルダをMine-imatorフォルダの中に入れます。</h3>
+         <img src="img/img1.png" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+      <h3>5.Mine-imatorを起動</h3>
+         <p>新規作成後、上にある<i class="material-icons-round">settings</i>設定をクリックし、<b>Interface</b>を開いてください。</p>
+      <h3>6.日本語フォントに設定</h3>
+         <p><b>Font: Default</b>の下の<i class="material-icons-round">folder</i>をクリックして日本語フォントに切り替えます</p>
+         <img src="img/img2.png" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+      <h3>7.言語を日本語に設定</h3>
+         <p>さらに下の<i class="material-icons-round">folder</i>をクリックして<b>japanese.milanguage</b>に切り替えたら日本語化の完了です。</p>
+         <img src="img/img3.png" width="90%" height="90%" oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+    <h2>注意事項</h2>
+      <p>●当サイトで配布するファイルデータにつきましては、個人で行った翻訳となります。正式なデベロッパーとは関係ありません。</p>
+      <p>●ブロック名などはJava版に合わせて翻訳してます。はみ出し防止のため、一部のカタカナは半角ｶﾀｶﾅに変換してます。</p>
+      <p>●日本語ファイルデータの使用は個人利用に限ります。二次配布等は禁止です。</p>
+      <p>●当サイトに掲載された内容を用いて行った行為による損害等の一切の責任を負いかねますのでご了承ください。</p>
+      <p>●今後新しいアップデートに対応するかどうかは気分となります。一人でほとんどの作業をしていますので、今後のアップデートについては未定となります。</p>
+      <div align="right">連絡は <a href="https://docs.google.com/forms/d/e/1FAIpQLSen31nMmsHogk9cyQxX8ejiOuWFG3cFmygOParbzRW2_yGuqg/viewform" target="_blank">フォーム</a> か <a href="https://twitter.com/kuadr0" target="_blank">Twitter</a> へどうぞ。</div>
+      <div align="center">© 2021 kuadr0</div>
    </div>
-</div>
-<style>
-body{
-user-select:none;
--webkit-user-select:none;
--ms-user-select: none;
--moz-user-select:none;
--khtml-user-select:none;
--webkit-user-drag:none;
--khtml-user-drag:none;
-}
-.material-icons-round {
-    height: 27px;
-    vertical-align: bottom;
-    font-size: 25px;
-   
-    /* WebKitブラウザサポート */
-    -webkit-font-smoothing: antialiased;
-    /* Chrome、Safariサポート */
-    text-rendering: optimizeLegibility;
-   
-    /* Firefoxサポート */
-    -moz-osx-font-smoothing: grayscale;
-   
-    /* IEサポート */
-    font-feature-settings: 'liga';
-
-}
-.material-icons-round.b {
-    height: 35px;
-    vertical-align: bottom;
-    font-size: 30px;
-}
-
-a.bt-samp34{
-    font-size: 19px;
-    font-weight: normal;
-    display: block;
-    text-decoration: none;
-    height: 40px;
-    width: 200px;
-    line-height: 42px;
-    text-align: center;
-    color: #2bb6c1;
-    border:solid 2px #2bb6c1;
-    border-radius: 30px;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
-    transition: 0.3s;
-}
-a.bt-samp34:hover{
-  background: #2bb6c1;
-  color: #fff;
-}
-.info {
-  margin: 0.5em 0;
-  color: #ff6347;/*文字色*/
-  font-size: 18px;
-}
-</style>
 </body>
 </html>

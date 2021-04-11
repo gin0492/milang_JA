@@ -1,0 +1,244 @@
+body{
+user-select:none;
+-webkit-user-select:none;
+-ms-user-select: none;
+-moz-user-select:none;
+-khtml-user-select:none;
+-webkit-user-drag:none;
+-khtml-user-drag:none;
+}
+body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック','Noto Sans JP', sans-serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+.contents {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.header {
+    text-align: center;
+}
+
+h1 {
+    font-weight: black;
+    position: relative;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: bold;
+    position: relative;
+    padding-left: 25px;
+    font-size: 30px;
+}
+
+h2:before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: none;
+    border-left: solid 15px transparent;
+    border-bottom: solid 15px rgb(119, 195, 223);
+}
+h2:after {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 10px;
+    width: 100%;
+    border-bottom: solid 3px rgb(119, 195, 223);
+}
+h3:first-letter {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #7172ac;
+}
+
+h4 {
+  font-weight: black;
+  font-size: 1.5em;
+  margin-block-start: .1em;
+  margin-block-end: .1em;
+}
+.red {
+  font-weight: black;
+  color: #ff6347;
+}
+.mbinfo {
+  font-size: 12px;
+}
+.info {
+  margin: 0.5em 0;
+  color: #ff6347;
+  font-size: 18px;
+}
+.btn-yes {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #28abb9;
+  font-size: 16px;
+  color: #28abb9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-yes:hover {
+  background-color: #28abb9;
+  border-color: #28abb9;
+  color: #FFF;
+}
+.btn-no {
+  display: inline-block;
+  max-width: 180px;
+  text-align: left;
+  border: 2px solid #ff75a0;
+  font-size: 16px;
+  color: #ff75a0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 4px;
+  transition: .4s;
+}
+
+.btn-no:hover {
+  background-color: #ff75a0;
+  border-color: #ff75a0;
+  color: #FFF;
+}
+
+.material-icons-round {
+    height: 23px;
+    vertical-align: bottom;
+    font-size: 25px;
+   
+    /* WebKitブラウザサポート */
+    -webkit-font-smoothing: antialiased;
+    /* Chrome、Safariサポート */
+    text-rendering: optimizeLegibility;
+   
+    /* Firefoxサポート */
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* IEサポート */
+    font-feature-settings: 'liga';
+
+}
+.material-icons-round.b {
+    height: 36px;
+    vertical-align: bottom;
+    font-size: 30px;
+}
+
+.bt-samp34{
+    font-size: 19px;
+    font-weight: normal;
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    width: 350px;
+    line-height: 42px;
+    text-align: center;
+    color: #2bb6c1;
+    border:solid 2px #2bb6c1;
+    border-radius: 30px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
+.bt-samp34:hover{
+  background: #2bb6c1;
+  color: #fff;
+}
+
+.modal-wrapper {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 40px 10px;
+  text-align: center
+}
+
+.modal-wrapper:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+  display: inline-block;
+  height: 100%;
+  margin-left: -.05em;
+  vertical-align: middle;
+  content: ""
+}
+
+.modal-wrapper .modal-window {
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 10;
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  padding: 30px 30px 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+  vertical-align: middle
+}
+
+.modal-wrapper .modal-window .modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: left
+}
+
+.modal-overlay {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8)
+}
+
+.modal-wrapper .modal-close {
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  color: #95979c !important;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+  color: #2b2e38 !important
+}
