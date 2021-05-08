@@ -4,12 +4,12 @@
         "language": "日本語",
         "translator": "kuadr0",
         "forversion": "1.2.7",
-        "lastchange": "2021/04/29"
+        "lastchange": "2021/05/08"
     },
     "startup/": {
         "caption": "スタート",
         "trial": "試用版",
-        "full": "完全版",
+        "full": "フル版",
         "version": "%1 バージョン %2, リリース日 %3",
         "credits1": "開発者 ",
         "credits1tip": "Davidさんのサイトへアクセスします。",
@@ -27,7 +27,7 @@
         "forums": "ﾌｫｰﾗﾑ",
         "forumstip": "Mine-imatorのフォーラムへアクセスします。（英語）",
         "upgrade": "アップグレード",
-        "upgradetip": "現在試用版を使用中です。クリックして機能の制限を解除します。",
+        "upgradetip": "現在、Mine-imatorの試用版をお使いです。フルバージョンにアップグレードするにはクリックしてください。",
         "recent": "最近使用したプロジェクト"
     },
     "recent/": {
@@ -48,7 +48,7 @@
         "trialtitle": "Mine-imatorをアップグレードする",
         "trialtext": "書き出し時の透かしを削除する",
         "trialbutton": "アップグレード",
-        "trialbuttontip": "Mine-imatorを完全版にアップグレードします。",
+        "trialbuttontip": "Mine-imatorをフルバージョンにアップグレードします。",
         "exportmovietitle": "動画の書き出し完了",
         "exportmoviebutton": "確認",
         "exportmoviebuttontip": "書き出した動画を確認します。",
@@ -56,7 +56,7 @@
         "exportimagebutton": "確認",
         "exportimagebuttontip": "書き出した動画を確認します。",
         "upgradedtitle": "レベルアップ！",
-        "upgradedtext": "完全版をご利用中です！",
+        "upgradedtext": "フル版をご利用中です！",
         "reloadprojecttitle": "設定を変更しました",
         "reloadprojecttext": "変更内容は再度プロジェクトを開いた時に有効になります",
         "restartprogramtitle": "設定を変更しました",
@@ -211,7 +211,7 @@
         "exportmovietip": "動画として書き出します。",
         "exportimagetip": "現在のフレームを画像ファイルとして書き出します。",
         "openfoldertip": "プロジェクトフォルダを開きます。",
-        "viewsecondtip": "セカンダリビューを切り替えます。",
+        "viewsecondtip": "セカンダリービューの表示を切り替えます。",
         "settingstip": "設定を開きます。",
         "undotip": "取り消し",
         "redotip": "やり直し",
@@ -2459,7 +2459,7 @@
         "type": "タイプ",
         "rotpoint/": {
             "custom": "カスタム回転ポイント",
-            "customtip": "オブジェクトの位置に対して相対的に回転する自分のポイントを使用します。",
+            "customtip": "オブジェクトの位置に対する独自の回転ポイントを使用します。",
             "x": "X",
             "xtip": "X値の回転ポイントを調整します。",
             "y": "Y",
@@ -2474,9 +2474,9 @@
             "snapsizetip": "XYZ値がスナップするグリッド間隔を調整します。"
         },
         "hierarchy": "階層",
-        "hierarchytip": "親オブジェクトを変更し、オブジェクトが継承すべきプロパティを変更します。",
+        "hierarchytip": "親を変更し、オブジェクトがどのようなプロパティを継承するかを変更します。",
         "parent": "親",
-        "parenttip": "オブジェクトに同じ動きする親を選択します。",
+        "parenttip": "オブジェクトがロックされるべき親を変更します。",
         "lockbendright": "右半分",
         "lockbendrighttip": "ボディパーツの右半分に固定します。",
         "lockbendleft": "左半分",
